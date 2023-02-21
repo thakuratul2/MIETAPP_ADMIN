@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\user_login;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminPanel;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[user_login::class,'index']);
+Route::get('/dashboard',[AdminPanel::class,'admin']);
+
