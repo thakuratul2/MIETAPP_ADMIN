@@ -16,5 +16,6 @@ use App\Http\Controllers\AdminPanel;
 */
 
 Route::get('/',[user_login::class,'index']);
+Route::get('/dashboard',[AdminPanel::class,'admin']);
 Route::post('/dashboard',[AdminPanel::class,'admin']);
 

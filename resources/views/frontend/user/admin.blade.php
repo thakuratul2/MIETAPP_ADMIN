@@ -1,11 +1,10 @@
 @extends('frontend.user.inc.main')
-@section('main-section')
+
 <div class="min-height-300 bg-primary position-absolute w-100"></div>
   <aside class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 " id="sidenav-main">
     <div class="sidenav-header">
       <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
       <a class="navbar-brand m-0" href="" target="_blank">
-   
         <span class="ms-1 font-weight-bold">MIET BR ADMIN</span>
       </a>
     </div>
@@ -13,7 +12,7 @@
     <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" href="./pages/dashboard.html">
+          <a class="nav-link active" href="">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
             </div>
@@ -21,79 +20,74 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="./pages/tables.html">
+          <a class="nav-link " href="">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
             </div>
-            <span class="nav-link-text ms-1">Tables</span>
+            <span class="nav-link-text ms-1">General Setting(dropdown)</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="./pages/billing.html">
+          <a class="nav-link " href="">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
             </div>
-            <span class="nav-link-text ms-1">Billing</span>
+            <span class="nav-link-text ms-1">Section</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="./pages/virtual-reality.html">
+          <a class="nav-link " href="">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-app text-info text-sm opacity-10"></i>
             </div>
-            <span class="nav-link-text ms-1">Virtual Reality</span>
+            <span class="nav-link-text ms-1">Subjects</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="./pages/rtl.html">
+          <a class="nav-link " href="">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-world-2 text-danger text-sm opacity-10"></i>
             </div>
-            <span class="nav-link-text ms-1">RTL</span>
+            <span class="nav-link-text ms-1">Teacher</span>
           </a>
         </li>
-        <li class="nav-item mt-3">
-          <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Account pages</h6>
-        </li>
+        
         <li class="nav-item">
-          <a class="nav-link " href="./pages/profile.html">
+          <a class="nav-link " href="">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
             </div>
-            <span class="nav-link-text ms-1">Profile</span>
+            <span class="nav-link-text ms-1">Time Period</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="./pages/sign-in.html">
+          <a class="nav-link " href="">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-single-copy-04 text-warning text-sm opacity-10"></i>
             </div>
-            <span class="nav-link-text ms-1">Sign In</span>
+            <span class="nav-link-text ms-1">Time Table</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="./pages/sign-up.html">
+          <a class="nav-link " href="">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-collection text-info text-sm opacity-10"></i>
             </div>
-            <span class="nav-link-text ms-1">Sign Up</span>
+            <span class="nav-link-text ms-1">Notes</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="">
+            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-collection text-info text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1"></span>
           </a>
         </li>
       </ul>
     </div>
-    <div class="sidenav-footer mx-3 ">
-      <div class="card card-plain shadow-none" id="sidenavCard">
-        <img class="w-50 mx-auto" src="./assets/img/illustrations/icon-documentation.svg" alt="sidebar_illustration">
-        <div class="card-body text-center p-3 w-100 pt-0">
-          <div class="docs-info">
-            <h6 class="mb-0">Need help?</h6>
-            <p class="text-xs font-weight-bold mb-0">Please check our docs</p>
-          </div>
-        </div>
-      </div>
-      <a href="https://www.creative-tim.com/learning-lab/bootstrap/license/argon-dashboard" target="_blank" class="btn btn-dark btn-sm w-100 mb-3">Documentation</a>
-      <a class="btn btn-primary btn-sm mb-0 w-100" href="https://www.creative-tim.com/product/argon-dashboard-pro?ref=sidebarfree" type="button">Upgrade to pro</a>
-    </div>
+   
+     
   </aside>
   <main class="main-content position-relative border-radius-lg ">
     <!-- Navbar -->
@@ -117,11 +111,11 @@
             <li class="nav-item d-flex align-items-center">
               <a href="javascript:;" class="nav-link text-white font-weight-bold px-0">
                 <i class="fa fa-user me-sm-1"></i>
-                <span class="d-sm-inline d-none">Sign In</span>
+                <span class="d-sm-inline d-none">Profile</span>
               </a>
             </li>
             <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
-              <a href="javascript:;" class="nav-link text-white p-0" id="iconNavbarSidenav">
+              <a href="" class="nav-link text-white p-0" id="iconNavbarSidenav">
                 <div class="sidenav-toggler-inner">
                   <i class="sidenav-toggler-line bg-white"></i>
                   <i class="sidenav-toggler-line bg-white"></i>
@@ -140,10 +134,10 @@
               </a>
               <ul class="dropdown-menu  dropdown-menu-end  px-2 py-3 me-sm-n4" aria-labelledby="dropdownMenuButton">
                 <li class="mb-2">
-                  <a class="dropdown-item border-radius-md" href="javascript:;">
+                  <a class="dropdown-item border-radius-md" href="">
                     <div class="d-flex py-1">
                       <div class="my-auto">
-                        <img src="./assets/img/team-2.jpg" class="avatar avatar-sm  me-3 ">
+                        <img src="{{asset('images/team-2.jpg')}}" class="avatar avatar-sm  me-3 ">
                       </div>
                       <div class="d-flex flex-column justify-content-center">
                         <h6 class="text-sm font-weight-normal mb-1">
@@ -158,10 +152,10 @@
                   </a>
                 </li>
                 <li class="mb-2">
-                  <a class="dropdown-item border-radius-md" href="javascript:;">
+                  <a class="dropdown-item border-radius-md" href="">
                     <div class="d-flex py-1">
                       <div class="my-auto">
-                        <img src="./assets/img/small-logos/logo-spotify.svg" class="avatar avatar-sm bg-gradient-dark  me-3 ">
+                        <img src="{{asset('images/small-logos/logo-spotify.svg')}}" class="avatar avatar-sm bg-gradient-dark  me-3 ">
                       </div>
                       <div class="d-flex flex-column justify-content-center">
                         <h6 class="text-sm font-weight-normal mb-1">
@@ -345,7 +339,7 @@
                     <p>There’s nothing I really wanted to do in life that I wasn’t able to get good at.</p>
                   </div>
                 </div>
-                <div class="carousel-item h-100" style="background-image: url('./assets/img/carousel-2.jpg');
+                <div class="carousel-item h-100" style="background-image: url('{{asset('images/carousel-2.jpg')}}');
       background-size: cover;">
                   <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
                     <div class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
@@ -355,7 +349,7 @@
                     <p>That’s my skill. I’m not really specifically talented at anything except for the ability to learn.</p>
                   </div>
                 </div>
-                <div class="carousel-item h-100" style="background-image: url('./assets/img/carousel-3.jpg');
+                <div class="carousel-item h-100" style="background-image: url('{{asset('images/carousel-3.jpg')}}');
       background-size: cover;">
                   <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
                     <div class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
@@ -586,4 +580,27 @@
           </div>
         </div>
       </div>
-      @endsection
+   
+      <footer class="footer pt-3  ">
+        <div class="container-fluid">
+          <div class="row align-items-center justify-content-lg-between">
+            <div class="col-lg-6 mb-lg-0 mb-4">
+              <div class="copyright text-center text-sm text-muted text-lg-start">
+                © <script>
+                  document.write(new Date().getFullYear())
+                </script>,
+                made with <i class="fa fa-heart"></i> by
+                <a href="" class="font-weight-bold" target="_blank">Atul Pratap Singh</a>
+                
+              </div>
+            </div>
+        
+          </div>
+        </div>
+      </footer>
+    </div>
+  </main>
+  
+       
+    </div>
+  </div>
