@@ -16,7 +16,7 @@
   <link href="{{asset('css/nucleo-svg.css')}}" rel="stylesheet" />
   <!-- Font Awesome Icons -->
   
-  <link rel="stylesheet" href="https://kit.fontawesome.com/6e829c0f55.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css" crossorigin="anonymous">
   <link href="{{asset('css/nucleo-svg.css')}}" rel="stylesheet" />
   <!-- CSS Files -->
   <link id="pagestyle" href="{{asset('css/argon-dashboard.css?v=2.0.4')}}" rel="stylesheet" />

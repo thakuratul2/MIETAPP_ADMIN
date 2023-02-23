@@ -176,19 +176,16 @@
               <div class="row">
                 <div class="col-8">
                   <div class="numbers">
-                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Today's Money</p>
+                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Total Teacher</p>
                     <h5 class="font-weight-bolder">
-                      $53,000
+                      3
                     </h5>
-                    <p class="mb-0">
-                      <span class="text-success text-sm font-weight-bolder">+55%</span>
-                      since yesterday
-                    </p>
+                  
                   </div>
                 </div>
                 <div class="col-4 text-end">
                   <div class="icon icon-shape bg-gradient-primary shadow-primary text-center rounded-circle">
-                    <i class="ni ni-money-coins text-lg opacity-10" aria-hidden="true"></i>
+                  <i class="fa-solid fa-person"></i>
                   </div>
                 </div>
               </div>
@@ -201,19 +198,16 @@
               <div class="row">
                 <div class="col-8">
                   <div class="numbers">
-                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Today's Users</p>
+                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Total Section</p>
                     <h5 class="font-weight-bolder">
-                      2,300
+                      25
                     </h5>
-                    <p class="mb-0">
-                      <span class="text-success text-sm font-weight-bolder">+3%</span>
-                      since last week
-                    </p>
+                   
                   </div>
                 </div>
                 <div class="col-4 text-end">
                   <div class="icon icon-shape bg-gradient-danger shadow-danger text-center rounded-circle">
-                    <i class="ni ni-world text-lg opacity-10" aria-hidden="true"></i>
+                  <i class="fa-solid fa-house"></i>
                   </div>
                 </div>
               </div>
@@ -226,19 +220,16 @@
               <div class="row">
                 <div class="col-8">
                   <div class="numbers">
-                    <p class="text-sm mb-0 text-uppercase font-weight-bold">New Clients</p>
+                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Total Student</p>
                     <h5 class="font-weight-bolder">
-                      +3,462
+                      800
                     </h5>
-                    <p class="mb-0">
-                      <span class="text-danger text-sm font-weight-bolder">-2%</span>
-                      since last quarter
-                    </p>
+                  
                   </div>
                 </div>
                 <div class="col-4 text-end">
                   <div class="icon icon-shape bg-gradient-success shadow-success text-center rounded-circle">
-                    <i class="ni ni-paper-diploma text-lg opacity-10" aria-hidden="true"></i>
+                  <i class="fa-regular fa-user"></i>
                   </div>
                 </div>
               </div>
@@ -251,13 +242,11 @@
               <div class="row">
                 <div class="col-8">
                   <div class="numbers">
-                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Sales</p>
+                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Total Subjects</p>
                     <h5 class="font-weight-bolder">
-                      $103,430
+                      10
                     </h5>
-                    <p class="mb-0">
-                      <span class="text-success text-sm font-weight-bolder">+5%</span> than last month
-                    </p>
+                  
                   </div>
                 </div>
                 <div class="col-4 text-end">
@@ -349,7 +338,7 @@
                     <td class="w-30">
                       <div class="d-flex px-2 py-1 align-items-center">
                         <div>
-                          <img src="./assets/img/icons/flags/US.png" alt="Country flag">
+                          <img src="{{asset('images/icons/flags/US.png')}}" alt="Country flag">
                         </div>
                         <div class="ms-4">
                           <p class="text-xs font-weight-bold mb-0">Country:</p>
@@ -380,7 +369,7 @@
                     <td class="w-30">
                       <div class="d-flex px-2 py-1 align-items-center">
                         <div>
-                          <img src="./assets/img/icons/flags/DE.png" alt="Country flag">
+                          <img src="{{asset('images/icons/flags/DE.png')}}" alt="Country flag">
                         </div>
                         <div class="ms-4">
                           <p class="text-xs font-weight-bold mb-0">Country:</p>
@@ -411,7 +400,7 @@
                     <td class="w-30">
                       <div class="d-flex px-2 py-1 align-items-center">
                         <div>
-                          <img src="./assets/img/icons/flags/GB.png" alt="Country flag">
+                          <img src="{{asset('images/icons/flags/GB.png')}}" alt="Country flag">
                         </div>
                         <div class="ms-4">
                           <p class="text-xs font-weight-bold mb-0">Country:</p>
@@ -442,7 +431,7 @@
                     <td class="w-30">
                       <div class="d-flex px-2 py-1 align-items-center">
                         <div>
-                          <img src="./assets/img/icons/flags/BR.png" alt="Country flag">
+                          <img src="{{asset('images/icons/flags/BR.png')}}" alt="Country flag">
                         </div>
                         <div class="ms-4">
                           <p class="text-xs font-weight-bold mb-0">Country:</p>
