@@ -45,12 +45,12 @@ echo "<script>alert('Invalid Details');</script>";
 <html lang="en">
   <head>
   
-    <title>Edu Authorities Student Management System|| Login Page</title>
+    <title>MIET BR ADMIN</title>
   
     <link rel="stylesheet" href="assets/vendors/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
-  
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
    <style>
      .content-wrapper{
