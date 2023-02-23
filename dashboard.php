@@ -6,17 +6,15 @@ if (strlen($_SESSION['sturecmsaid']==0)) {
   header('location:logout.php');
   } else{
    
-  ?><!--  Orginal Author Name: Mayuri K. 
- for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
- Visit website : www.mayurik.com -->  
+  ?>
 
-      <!-- partial:partials/_navbar.html -->
+      
      <?php include_once('includes/header.php');?>
-      <!-- partial -->
+   
       <div class="container-fluid page-body-wrapper">
         <!-- partial:partials/_sidebar.html -->
         <?php include_once('includes/sidebar.php');?>
-        <!-- partial -->
+        
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="row">
@@ -120,8 +118,7 @@ $totpublicnotice=$query4->rowCount();
            
             
           </div>
-          <!-- content-wrapper ends -->
-          <!-- partial:partials/_footer.html -->
+      
          <?php include_once('includes/footer.php');?>
           <!-- partial -->
         </div>
@@ -152,6 +149,5 @@ $totpublicnotice=$query4->rowCount();
         chart.draw(data, options);
       }
     </script>
-    <!-- container-scroller -->
-    <!-- plugins:js -->
+    
    <?php }  ?>

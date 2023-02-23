@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
    
-    <title>Edu Authorities Student Management System|| Update About Us</title>
+    <title>MIET BR ADMIN</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="assets/vendors/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
@@ -16,15 +16,7 @@
     <link rel="stylesheet" href="assets/vendors/select2-bootstrap-theme/select2-bootstrap.min.css">
     <!-- End plugin css for this page -->
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-        }
-        </script>
-        <!--  Orginal Author Name: Mayuri K. 
- for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
- Visit website : www.mayurik.com -->  
-    <!-- Layout styles -->
+  
     <link rel="stylesheet" href="assets/css/style.css" />
     <script src="http://js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
     <script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script>
@@ -67,7 +59,7 @@ if($query->rowCount() > 0)
 foreach($results as $row)
 {               ?>
         <div class="navbar-menu-wrapper d-flex align-items-center flex-grow-1">
-          <h5 class="mb-0 font-weight-medium d-none d-lg-flex mx-auto"><?php  echo htmlentities($row->AdminName);?> Welcome to Edu Authorities !</h5>
+          <h5 class="mb-0 font-weight-medium d-none d-lg-flex mx-auto"> Welcome to MIET BR ADMIN !</h5>
           <div id="google_translate_element" class="ml-auto"></div>
 
           <ul class="navbar-nav navbar-nav-right ml-auto">
