@@ -9,15 +9,13 @@
     <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
     <!-- endinject -->
     <!-- Plugin css for this page -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/vendors/daterangepicker/daterangepicker.css">
     <link rel="stylesheet" href="assets/vendors/chartist/chartist.min.css">
     <!-- Plugin css for this page -->
     <link rel="stylesheet" href="assets/vendors/select2/select2.min.css">
     <link rel="stylesheet" href="assets/vendors/select2-bootstrap-theme/select2-bootstrap.min.css">
     <!-- End plugin css for this page -->
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  
+   
     <link rel="stylesheet" href="assets/css/style.css" />
     <script src="http://js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
     <script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script>
@@ -60,7 +58,7 @@ if($query->rowCount() > 0)
 foreach($results as $row)
 {               ?>
         <div class="navbar-menu-wrapper d-flex align-items-center flex-grow-1">
-          <h5 class="mb-0 font-weight-medium d-none d-lg-flex mx-auto"> Welcome to MIET BR ADMIN !</h5>
+          <h5 class="mb-0 font-weight-medium d-none d-lg-flex mx-auto">Welcome:- <?php  echo htmlentities($row->AdminName);?> </h5>
           <div id="google_translate_element" class="ml-auto"></div>
 
           <ul class="navbar-nav navbar-nav-right ml-auto">

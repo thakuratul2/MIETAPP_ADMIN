@@ -40,17 +40,24 @@ echo "<script>alert('Invalid Details');</script>";
 }
 }
 
-?>
+?><!--  Orginal Author Name: Mayuri.K. 
+ for any PHP, Codeignitor, Laravel OR Python work contact me at mdkhairnar92@gmail.com  
+ Visit website : https://mayurik.com -->  
 <!DOCTYPE html>
 <html lang="en">
   <head>
   
-    <title>MIET BR ADMIN</title>
-  
+    <title>Edu Authorities Student Management System|| Login Page</title>
+    <!-- plugins:css -->
     <link rel="stylesheet" href="assets/vendors/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
     <link rel="stylesheet" href="assets/css/style.css">
    <style>
      .content-wrapper{
@@ -105,7 +112,7 @@ echo "<script>alert('Invalid Details');</script>";
     </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
-    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+   
     <!-- endinject -->
     <!-- Plugin js for this page -->
     <!-- End plugin js for this page -->

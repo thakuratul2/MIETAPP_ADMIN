@@ -1780,6 +1780,14 @@
     -webkit-transform: translateX(-100%) rotate(-120deg);
     transform: translateX(-100%) rotate(-120deg); } }
 
+/*-------------------------------------------------------------------*/
+/* === Boostrap Main SCSS === */
+/*!
+ * Bootstrap v4.5.3 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
 :root {
   --blue: #5E50F9;
   --indigo: #6610f2;
@@ -12444,7 +12452,7 @@ dl {
 .auth .brand-logo {
   margin-bottom: 2rem; }
   .auth .brand-logo img {
-    width: 90px; }
+    width: 350px; }
 
 .auth form .form-group {
   margin-bottom: 1.5rem; }

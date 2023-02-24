@@ -60,7 +60,9 @@
                 </ul>
               </div>
             </li>
-             
+            <!--  Orginal Author Name: Mayuri K. 
+ for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
+ Visit website : www.mayurik.com -->  
             <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
                 <i class="icon-doc menu-icon"></i>
@@ -112,17 +114,19 @@
             </li>
 
              <li class="nav-item">
-              <a class="nav-link" target="a_blank" href="">
+              <a class="nav-link" target="a_blank" href="https://mayurik.com/source-code/P0886/modern-student-management-system-project-in-php-and-mysql">
                 <i class="icon-info menu-icon"></i>
                 <span class="menu-title">Advance Version Info</span>
               </a>
             </li>
               <li class="nav-item">
-              <a class="nav-link" target="a_blank" href="">
+              <a class="nav-link" target="a_blank" href="https://www.youtube.com/watch?v=EY8OO7hxEys&t">
                 <i class="icon-eye menu-icon"></i>
                 <span class="menu-title">Advance Video Demo</span>
               </a>
             </li>
             </li>
           </ul>
-        </nav> 
+        </nav><!--  Orginal Author Name: Mayuri K. 
+ for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
+ Visit website : www.mayurik.com -->  
