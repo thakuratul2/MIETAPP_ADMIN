@@ -11,6 +11,8 @@
     <!-- Plugin css for this page -->
     <link rel="stylesheet" href="assets/vendors/daterangepicker/daterangepicker.css">
     <link rel="stylesheet" href="assets/vendors/chartist/chartist.min.css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+
     <!-- Plugin css for this page -->
     <link rel="stylesheet" href="assets/vendors/select2/select2.min.css">
     <link rel="stylesheet" href="assets/vendors/select2-bootstrap-theme/select2-bootstrap.min.css">
