@@ -7570,7 +7570,8 @@ button.bg-dark:focus {
   border-radius: 0.3rem !important; }
 
 .rounded-circle {
-  border-radius: 50% !important; }
+  border-radius: 50% !important;
+width:50px; }
 
 .rounded-pill {
   border-radius: 50rem !important; }

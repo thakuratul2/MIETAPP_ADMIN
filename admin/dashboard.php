@@ -11,7 +11,7 @@ if (strlen($_SESSION['sturecmsaid']==0)) {
 <html lang="en">
   <head>
    
-    <title>Student  Management System|||Dashboard</title>
+    <title>MIET BR ADMIN || DASHBOARD</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
