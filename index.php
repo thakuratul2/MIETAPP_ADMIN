@@ -40,14 +40,12 @@ echo "<script>alert('Invalid Details');</script>";
 }
 }
 
-?><!--  Orginal Author Name: Mayuri.K. 
- for any PHP, Codeignitor, Laravel OR Python work contact me at mdkhairnar92@gmail.com  
- Visit website : https://mayurik.com -->  
+?> 
 <!DOCTYPE html>
 <html lang="en">
   <head>
   
-    <title>Edu Authorities Student Management System|| Login Page</title>
+    <title>MIET BR ADMIN</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="assets/vendors/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
