@@ -78,13 +78,14 @@ echo "<script>alert('Username or Student Id  already exist. Please try again');<
 <html lang="en">
   <head>
    
-    <title>Student  Management System|| Add Students</title>
+    <title>MIET BR ADMIN || Add Teacher</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
     <!-- endinject -->
     <!-- Plugin css for this page -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="vendors/select2/select2.min.css">
     <link rel="stylesheet" href="vendors/select2-bootstrap-theme/select2-bootstrap.min.css">
     <!-- End plugin css for this page -->
@@ -106,11 +107,11 @@ echo "<script>alert('Username or Student Id  already exist. Please try again');<
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title"> Add Students </h3>
+              <h3 class="page-title"> Add Teacher </h3>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-                  <li class="breadcrumb-item active" aria-current="page"> Add Students</li>
+                  <li class="breadcrumb-item active" aria-current="page"> Add Teacher</li>
                 </ol>
               </nav>
             </div>
@@ -119,7 +120,7 @@ echo "<script>alert('Username or Student Id  already exist. Please try again');<
               <div class="col-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title" style="text-align: center;">Add Students</h4>
+                    <h4 class="card-title" style="text-align: center;">Add Teacher Details</h4>
                    
                     <form class="forms-sample" method="post" enctype="multipart/form-data">
                       
