@@ -3,7 +3,7 @@
 define('DB_HOST','localhost');
 define('DB_USER','root');
 define('DB_PASS','');
-define('DB_NAME','miet_db');
+define('DB_NAME','studentmsdb');
 // Establish database connection.
 try
 {
@@ -13,6 +13,4 @@ catch (PDOException $e)
 {
 exit("Error: " . $e->getMessage());
 }
-?><!--  Orginal Author Name: Mayuri K. 
- for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
- Visit website : www.mayurik.com -->  
+?>

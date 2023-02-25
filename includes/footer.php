@@ -1,49 +1,82 @@
+<!--footer-->
+<div class="footer">
+    <!-- container -->
+    <div class="container">
+      <div class="col-md-6 footer-left">
+        <ul>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="about.php">About</a></li>
+          <li><a href="contact.php">Contact</a></li>
+          <li><a href="admin/login.php">Admin</a></li>
+          <li><a href="user/login.php">Student</a></li>
+        </ul>
+       
+      </div>
+      <div class="col-md-3 footer-middle">
+        <?php
+$sql="SELECT * from tblpage where PageType='contactus'";
+$query = $dbh -> prepare($sql);
+$query->execute();
+$results=$query->fetchAll(PDO::FETCH_OBJ);
 
-
-
-    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
-    <!-- endinject -->
-    <!-- Plugin js for this page -->
-    <script src="assets/vendors/select2/select2.min.js"></script>
-    <script src="assets/vendors/typeahead.js/typeahead.bundle.min.js"></script>
-    <!-- End plugin js for this page -->
-    <!-- inject:js -->
-    <script src="assets/vendors/chart.js/Chart.min.js"></script>
-    <script src="assets/vendors/moment/moment.min.js"></script>
-    <script src="assets/vendors/daterangepicker/daterangepicker.js"></script>
-    <script src="assets/vendors/chartist/chartist.min.js"></script>
-
-    <script src="assets/js/off-canvas.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!-- endinject -->
-    <!-- Custom js for this page -->
-    <script src="assets/js/typeahead.js"></script>
-    <script src="assets/js/select2.js"></script>
-     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <!-- <script src="assets/js/dashboard.js"></script> -->
-    <!-- End custom js for this page -->
-    <script>
-      function onReady(callback) {
-    var intervalID = window.setInterval(checkReady, 1000);
-    function checkReady() {
-        if (document.getElementsByTagName('body')[0] !== undefined) {
-            window.clearInterval(intervalID);
-            callback.call(this);
-        }
-    }
-}
-
-function show(id, value) {
-    document.getElementById(id).style.display = value ? 'block' : 'none';
-}
-
-onReady(function () {
-    show('page', true);
-    show('loading', false);
+$cnt=1;
+if($query->rowCount() > 0)
+{
+foreach($results as $row)
+{               ?>
+        <h3>Address</h3>
+        <div class="address">
+          <p><?php  echo htmlentities($row->PageDescription);?>
+          </p>
+        </div>
+        <div class="phone">
+          <p><?php  echo htmlentities($row->MobileNumber);?></p>
+        </div>
+      <?php $cnt=$cnt+1;}} ?></div>
+      <div class="col-md-3 footer-right">
+        <h3>SMS</h3>
+        <p>Proin eget ipsum ultrices, aliquet velit eget, tempus tortor. Phasellus non velit sit amet diam faucibus molestie tincidunt efficitur nisi.</p>
+      </div>
+      <div class="clearfix"> </div> 
+    </div>
+    <!-- //container -->
+  </div>
+<!--/footer-->
+<!--copy-rights-->
+<div class="copyright">
+    <!-- container -->
+    <div class="container">
+      <div class="copyright-left">
+      <p>© <?php echo date('Y');?> Student Management System </p>
+      </div>
+      <div class="copyright-right">
+        <ul>
+          <li><a href="#" class="twitter"> </a></li>
+          <li><a href="#" class="twitter facebook"> </a></li>
+          <li><a href="#" class="twitter chrome"> </a></li>
+          <li><a href="#" class="twitter pinterest"> </a></li>
+          <li><a href="#" class="twitter linkedin"> </a></li>
+          <li><a href="#" class="twitter dribbble"> </a></li>
+        </ul>
+      </div>
+      <div class="clearfix"> </div>
+      
+    </div>
+    <!-- //container -->
+    <!---->
+<script type="text/javascript">
+    $(document).ready(function() {
+        /*
+        var defaults = {
+        containerID: 'toTop', // fading element id
+        containerHoverID: 'toTopHover', // fading element hover id
+        scrollSpeed: 1200,
+        easingType: 'linear' 
+        };
+        */
+    $().UItoTop({ easingType: 'easeOutQuart' });
 });
-    </script>
-  </body>
-  <!--  Orginal Author Name: Mayuri K. 
- for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
- Visit website : www.mayurik.com -->  
-</html>
+</script>
+<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!----> 
+  </div>

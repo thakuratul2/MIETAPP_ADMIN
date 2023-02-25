@@ -19,7 +19,6 @@ foreach ($results as $result) {
 $_SESSION['sturecmsaid']=$result->ID;
 }
 
-
   if(!empty($_POST["remember"])) {
 //COOKIES for username
 setcookie ("user_login",$_POST["username"],time()+ (10 * 365 * 24 * 60 * 60));
@@ -34,35 +33,30 @@ setcookie ("userpassword","");
       }
 }
 $_SESSION['login']=$_POST['username'];
-echo "<script type='text/javascript'> document.location ='dashboard.php'; </script>";
+echo "<script type='text/javascript'> document.location ='admin/dashboard.php'; </script>";
 } else{
 echo "<script>alert('Invalid Details');</script>";
 }
 }
 
-?> 
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
   
-    <title>MIET BR ADMIN</title>
+    <title>Student  Management System|| Login Page</title>
     <!-- plugins:css -->
-    <link rel="stylesheet" href="assets/vendors/simple-line-icons/css/simple-line-icons.css">
-    <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
-    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
     <!-- endinject -->
     <!-- Plugin css for this page -->
     <!-- End plugin css for this page -->
     <!-- inject:css -->
     <!-- endinject -->
     <!-- Layout styles -->
-    <link rel="stylesheet" href="assets/css/style.css">
-   <style>
-     .content-wrapper{
-          background-image: url('assets/images/background.jpg');
-          background-size: cover;
-     }
-   </style>
+    <link rel="stylesheet" href="admin/css/style.css">
+   
   </head>
   <body>
     <div class="container-scroller">
@@ -70,9 +64,9 @@ echo "<script>alert('Invalid Details');</script>";
         <div class="content-wrapper d-flex align-items-center auth">
           <div class="row flex-grow">
             <div class="col-lg-4 mx-auto">
-              <div class="auth-form-light text-center p-5">
+              <div class="auth-form-light text-left p-5">
                 <div class="brand-logo">
-                  <img src="assets/images/logo.png">
+                  <img src="admin/images/logo.svg">
                 </div>
                 <h4>Hello! let's get started</h4>
                 <h6 class="font-weight-light">Sign in to continue.</h6>
@@ -94,10 +88,10 @@ echo "<script>alert('Invalid Details');</script>";
                     </div>
                     <a href="forgot-password.php" class="auth-link text-black">Forgot password?</a>
                   </div>
-         <!--          <div class="mb-2">
+                  <div class="mb-2">
                     <a href="../index.php" class="btn btn-block btn-facebook auth-form-btn">
                       <i class="icon-social-home mr-2"></i>Back Home </a>
-                  </div> -->
+                  </div>
                   
                 </form>
               </div>
@@ -110,13 +104,13 @@ echo "<script>alert('Invalid Details');</script>";
     </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
-   
+    <script src="admin/vendors/js/vendor.bundle.base.js"></script>
     <!-- endinject -->
     <!-- Plugin js for this page -->
     <!-- End plugin js for this page -->
     <!-- inject:js -->
-    <script src="assets/js/off-canvas.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="admin/js/off-canvas.js"></script>
+    <script src="admin/js/misc.js"></script>
     <!-- endinject -->
   </body>
 </html>
