@@ -44,7 +44,7 @@ echo "<script>alert('Invalid Details');</script>";
 <html lang="en">
   <head>
   
-    <title>Student  Management System|| Login Page</title>
+    <title>MIET BR ADMIN</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
@@ -66,7 +66,7 @@ echo "<script>alert('Invalid Details');</script>";
             <div class="col-lg-4 mx-auto">
               <div class="auth-form-light text-left p-5">
                 <div class="brand-logo">
-                  <img src="admin/images/logo.svg">
+                  <img src="images/logo.png">
                 </div>
                 <h4>Hello! let's get started</h4>
                 <h6 class="font-weight-light">Sign in to continue.</h6>
@@ -86,11 +86,11 @@ echo "<script>alert('Invalid Details');</script>";
                       <label class="form-check-label text-muted">
                         <input type="checkbox" id="remember" class="form-check-input" name="remember" <?php if(isset($_COOKIE["user_login"])) { ?> checked <?php } ?> /> Keep me signed in </label>
                     </div>
-                    <a href="forgot-password.php" class="auth-link text-black">Forgot password?</a>
+                    <a href="admin/forgot-password.php" class="auth-link text-black">Forgot password?</a>
                   </div>
                   <div class="mb-2">
-                    <a href="../index.php" class="btn btn-block btn-facebook auth-form-btn">
-                      <i class="icon-social-home mr-2"></i>Back Home </a>
+                    <a href="user/login.php" class="btn btn-block btn-facebook auth-form-btn">
+                      <i class="icon-social-home mr-2"></i>Login as Student</a>
                   </div>
                   
                 </form>
