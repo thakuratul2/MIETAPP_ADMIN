@@ -23,7 +23,7 @@ $query->execute();
 <html lang="en">
   <head>
    
-    <title>Student  Management System|||Manage Class</title>
+    <title>MIET BR ADMIN || Manage Section</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
@@ -32,6 +32,7 @@ $query->execute();
     <!-- Plugin css for this page -->
     <link rel="stylesheet" href="./vendors/daterangepicker/daterangepicker.css">
     <link rel="stylesheet" href="./vendors/chartist/chartist.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <!-- End plugin css for this page -->
     <!-- inject:css -->
     <!-- endinject -->
@@ -52,11 +53,11 @@ $query->execute();
         <div class="main-panel">
           <div class="content-wrapper">
              <div class="page-header">
-              <h3 class="page-title"> Manage Class </h3>
+              <h3 class="page-title"> Manage Section </h3>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-                  <li class="breadcrumb-item active" aria-current="page"> Manage Class</li>
+                  <li class="breadcrumb-item active" aria-current="page"> Manage Section</li>
                 </ol>
               </nav>
             </div>
@@ -65,17 +66,18 @@ $query->execute();
                 <div class="card">
                   <div class="card-body">
                     <div class="d-sm-flex align-items-center mb-4">
-                      <h4 class="card-title mb-sm-0">Manage Class</h4>
-                      <a href="#" class="text-dark ml-auto mb-3 mb-sm-0"> View all Classes</a>
+                      <h4 class="card-title mb-sm-0">Manage Section</h4>
+                      <a href="#" class="text-dark ml-auto mb-3 mb-sm-0"> View all Section</a>
                     </div>
                     <div class="table-responsive border rounded p-1">
                       <table class="table">
                         <thead>
                           <tr>
                             <th class="font-weight-bold">S.No</th>
-                            <th class="font-weight-bold">Class Name</th>
-                            <th class="font-weight-bold">Section</th>
-                            <th class="font-weight-bold">Creation Date</th>
+                            <th class="font-weight-bold">Section Name</th>
+                            <th class="font-weight-bold">Year</th>
+                            <th class="font-weight-bold">Semester</th>
+                            <th class="font-weight-bold">Group Name</th>
                             <th class="font-weight-bold">Action</th>
                             
                           </tr>
@@ -109,7 +111,7 @@ foreach($results as $row)
                           <tr>
                            
                             <td><?php echo htmlentities($cnt);?></td>
-                            <td><?php  echo htmlentities($row->ClassName);?></td>
+                            <td><?php  echo htmlentities($row->SectionName);?></td>
                             <td><?php  echo htmlentities($row->Section);?></td>
                             <td><?php  echo htmlentities($row->CreationDate);?></td>
                             <td>
