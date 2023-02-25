@@ -112,8 +112,9 @@ foreach($results as $row)
                            
                             <td><?php echo htmlentities($cnt);?></td>
                             <td><?php  echo htmlentities($row->SectionName);?></td>
-                            <td><?php  echo htmlentities($row->Section);?></td>
-                            <td><?php  echo htmlentities($row->CreationDate);?></td>
+                            <td><?php  echo htmlentities($row->year);?></td>
+                            <td><?php  echo htmlentities($row->semester);?></td>
+                            <td><?php  echo htmlentities($row->groupName);?></td>
                             <td>
                               <div><a href="edit-class-detail.php?editid=<?php echo htmlentities ($row->ID);?>"><i class="icon-eye"></i></a>
                                                 || <a href="manage-class.php?delid=<?php echo ($row->ID);?>" onclick="return confirm('Do you really want to Delete ?');"> <i class="icon-trash"></i></a></div>

@@ -87,10 +87,10 @@ echo "<script>window.location.href ='add-class.php'</script>";
                         <label for="exampleInputEmail3">Year</label>
                         <select  name="year" class="form-control" required='true'>
                           <option value="">Choose year</option>
-                          <option value="1year">1 Year</option>
-                          <option value="2year">2 Year</option>
-                          <option value="3year">3 Year</option>
-                          <option value="4year">4 Year</option>
+                          <option value="1 year">1 Year</option>
+                          <option value="2 year">2 Year</option>
+                          <option value="3 year">3 Year</option>
+                          <option value="4 year">4 Year</option>
                           
                         </select>
                       </div>
