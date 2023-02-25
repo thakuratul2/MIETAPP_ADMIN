@@ -39,7 +39,7 @@ foreach($results as $row)
             
             <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-                <span class="menu-title">Class</span>
+                <span class="menu-title">Sections</span>
                 <i class="icon-layers menu-icon"></i>
               </a>
               <div class="collapse" id="ui-basic">
@@ -51,10 +51,82 @@ foreach($results as $row)
             </li>
             <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#ui-basic1" aria-expanded="false" aria-controls="ui-basic1">
-                <span class="menu-title">Students</span>
+                <span class="menu-title">Teachers</span>
                 <i class="icon-people menu-icon"></i>
               </a>
               <div class="collapse" id="ui-basic1">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="add-students.php">Add Students</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="manage-students.php">Manage Students</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#ui-basic2" aria-expanded="false" aria-controls="ui-basic1">
+                <span class="menu-title">Subjects</span>
+                <i class="icon-people menu-icon"></i>
+              </a>
+              <div class="collapse" id="ui-basic2">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="add-students.php">Add Students</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="manage-students.php">Manage Students</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#ui-basic3" aria-expanded="false" aria-controls="ui-basic1">
+                <span class="menu-title">Assign</span>
+                <i class="icon-people menu-icon"></i>
+              </a>
+              <div class="collapse" id="ui-basic3">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="add-students.php">Add Students</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="manage-students.php">Manage Students</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#ui-basic4" aria-expanded="false" aria-controls="ui-basic1">
+                <span class="menu-title">TimeStamp</span>
+                <i class="icon-people menu-icon"></i>
+              </a>
+              <div class="collapse" id="ui-basic4">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="add-students.php">Add Students</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="manage-students.php">Manage Students</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#ui-basic12" aria-expanded="false" aria-controls="ui-basic1">
+                <span class="menu-title">TimeTable</span>
+                <i class="icon-people menu-icon"></i>
+              </a>
+              <div class="collapse" id="ui-basic12">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="add-students.php">Add Students</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="manage-students.php">Manage Students</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#ui-basic5" aria-expanded="false" aria-controls="ui-basic1">
+                <span class="menu-title">Notes</span>
+                <i class="icon-people menu-icon"></i>
+              </a>
+              <div class="collapse" id="ui-basic5">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="add-students.php">Add Students</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="manage-students.php">Manage Students</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#ui-basic6" aria-expanded="false" aria-controls="ui-basic1">
+                <span class="menu-title">Assignment</span>
+                <i class="icon-people menu-icon"></i>
+              </a>
+              <div class="collapse" id="ui-basic6">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item"> <a class="nav-link" href="add-students.php">Add Students</a></li>
                   <li class="nav-item"> <a class="nav-link" href="manage-students.php">Manage Students</a></li>
@@ -73,7 +145,7 @@ foreach($results as $row)
                 </ul>
               </div>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#auth1" aria-expanded="false" aria-controls="auth">
                 <span class="menu-title">Public Notice</span>
                 <i class="icon-doc menu-icon"></i>
@@ -108,6 +180,18 @@ foreach($results as $row)
                 <i class="icon-magnifier menu-icon"></i>
               </a>
             </li>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#ui-basic7" aria-expanded="false" aria-controls="ui-basic1">
+                <span class="menu-title">Prev Years</span>
+                <i class="icon-people menu-icon"></i>
+              </a>
+              <div class="collapse" id="ui-basic7">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="add-students.php">Add Students</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="manage-students.php">Manage Students</a></li>
+                </ul>
+              </div>
             </li>
           </ul>
         </nav>
