@@ -49,6 +49,8 @@ echo "<script>alert('Invalid Details');</script>";
     <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
     <!-- endinject -->
     <!-- Plugin css for this page -->
     <!-- End plugin css for this page -->

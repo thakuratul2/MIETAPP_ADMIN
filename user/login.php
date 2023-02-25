@@ -51,6 +51,8 @@ echo "<script>alert('Invalid Details');</script>";
     <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
     <!-- endinject -->
     <!-- Plugin css for this page -->
     <!-- End plugin css for this page -->
@@ -70,8 +72,8 @@ echo "<script>alert('Invalid Details');</script>";
                 <div class="brand-logo">
                   <img src="images/logo.png">
                 </div>
-                <h4>Hello! let's get started</h4>
-                <h6 class="font-weight-light">Sign in to continue.</h6>
+                <h4>Hello! Student<br><h4> Let's Started</h4></h4>
+               
                 <form class="pt-3" id="login" method="post" name="login">
                   <div class="form-group">
                     <input type="text" class="form-control form-control-lg" placeholder="enter your student id or username" required="true" name="stuid" value="<?php if(isset($_COOKIE["user_login"])) { echo $_COOKIE["user_login"]; } ?>" >

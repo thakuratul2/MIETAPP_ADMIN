@@ -7,16 +7,20 @@ if (strlen($_SESSION['sturecmsaid']==0)) {
   } else{
    if(isset($_POST['submit']))
   {
- $cname=$_POST['cname'];
- $section=$_POST['section'];
-$sql="insert into tblclass(ClassName,Section)values(:cname,:section)";
+ $cname=$_POST['sname'];
+ $year=$_POST['year'];
+ $semester=$_POST['semester'];
+ $groupName=$_POST['groupName'];
+$sql="insert into tblclass(SectionName,year,semester,groupName)values(:cname,:year,:semester,:groupName)";
 $query=$dbh->prepare($sql);
 $query->bindParam(':cname',$cname,PDO::PARAM_STR);
-$query->bindParam(':section',$section,PDO::PARAM_STR);
+$query->bindParam(':year',$year,PDO::PARAM_STR);
+$query->bindParam(':semester',$semester,PDO::PARAM_STR);
+$query->bindParam(':groupName',$groupName,PDO::PARAM_STR);
  $query->execute();
    $LastInsertId=$dbh->lastInsertId();
    if ($LastInsertId>0) {
-    echo '<script>alert("Class has been added.")</script>';
+    echo '<script>alert("Section has been added.")</script>';
 echo "<script>window.location.href ='add-class.php'</script>";
   }
   else
@@ -29,12 +33,13 @@ echo "<script>window.location.href ='add-class.php'</script>";
 <html lang="en">
   <head>
    
-    <title>Student  Management System|| Add Class</title>
+    <title>MIET BR ADMIN || Add Section</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
     <!-- endinject -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <!-- Plugin css for this page -->
     <link rel="stylesheet" href="vendors/select2/select2.min.css">
     <link rel="stylesheet" href="vendors/select2-bootstrap-theme/select2-bootstrap.min.css">
@@ -61,7 +66,7 @@ echo "<script>window.location.href ='add-class.php'</script>";
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-                  <li class="breadcrumb-item active" aria-current="page"> Add Class</li>
+                  <li class="breadcrumb-item active" aria-current="page"> Add Section</li>
                 </ol>
               </nav>
             </div>
@@ -70,27 +75,45 @@ echo "<script>window.location.href ='add-class.php'</script>";
               <div class="col-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title" style="text-align: center;">Add Class</h4>
+                    <h4 class="card-title" style="text-align: center;">Add Section</h4>
                    
                     <form class="forms-sample" method="post">
                       
                       <div class="form-group">
-                        <label for="exampleInputName1">Class Name</label>
-                        <input type="text" name="cname" value="" class="form-control" required='true'>
+                        <label for="exampleInputName1">Section Name</label>
+                        <input type="text" name="sname" value="" class="form-control" required='true'>
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputEmail3">Section</label>
-                        <select  name="section" class="form-control" required='true'>
-                          <option value="">Choose Section</option>
-                          <option value="A">A</option>
-                          <option value="B">B</option>
-                          <option value="C">C</option>
-                          <option value="D">D</option>
-                          <option value="E">E</option>
-                          <option value="F">F</option>
+                        <label for="exampleInputEmail3">Year</label>
+                        <select  name="year" class="form-control" required='true'>
+                          <option value="">Choose year</option>
+                          <option value="1year">1 Year</option>
+                          <option value="2year">2 Year</option>
+                          <option value="3year">3 Year</option>
+                          <option value="4year">4 Year</option>
+                          
                         </select>
                       </div>
-                      <button type="submit" class="btn btn-primary mr-2" name="submit">Add</button>
+                      <div class="form-group">
+                        <label for="exampleInputEmail3">Semester</label>
+                        <select  name="semester" class="form-control" required='true'>
+                          <option value="">Choose semester</option>
+                          <option value="odd">Odd Semester</option>
+                          <option value="even">Even Semester</option>
+                          
+                          
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail3">Group</label>
+                        <select  name="groupName" class="form-control" required='true'>
+                          <option value="">Choose group</option>
+                          <option value="G1">G1</option>
+                          <option value="G2">G2</option>
+                         
+                        </select>
+                      </div>
+                      <button type="submit" class="btn btn-primary mr-2" name="submit">Add Section</button>
                      
                     </form>
                   </div>

@@ -27,9 +27,9 @@ foreach($results as $row)
                
               </a>
             </li>
-            <li class="nav-item nav-category">
+            <!-- <li class="nav-item nav-category">
               <span class="nav-link">Dashboard</span>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="dashboard.php">
                 <span class="menu-title">Dashboard</span>
@@ -44,8 +44,8 @@ foreach($results as $row)
               </a>
               <div class="collapse" id="ui-basic">
                 <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="add-class.php">Add Class</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="manage-class.php">Manage Class</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="add-class.php">Add Section</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="manage-class.php">Manage Section</a></li>
                 </ul>
               </div>
             </li>
@@ -64,7 +64,7 @@ foreach($results as $row)
             <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#ui-basic2" aria-expanded="false" aria-controls="ui-basic1">
                 <span class="menu-title">Subjects</span>
-                <i class="icon-people menu-icon"></i>
+                <i class="icon-notebook menu-icon"></i>
               </a>
               <div class="collapse" id="ui-basic2">
                 <ul class="nav flex-column sub-menu">
@@ -76,7 +76,7 @@ foreach($results as $row)
             <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#ui-basic3" aria-expanded="false" aria-controls="ui-basic1">
                 <span class="menu-title">Assign</span>
-                <i class="icon-people menu-icon"></i>
+                <i class="icon-graduation menu-icon"></i>
               </a>
               <div class="collapse" id="ui-basic3">
                 <ul class="nav flex-column sub-menu">
@@ -88,7 +88,7 @@ foreach($results as $row)
             <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#ui-basic4" aria-expanded="false" aria-controls="ui-basic1">
                 <span class="menu-title">TimeStamp</span>
-                <i class="icon-people menu-icon"></i>
+                <i class="icon-clock menu-icon"></i>
               </a>
               <div class="collapse" id="ui-basic4">
                 <ul class="nav flex-column sub-menu">
@@ -100,7 +100,7 @@ foreach($results as $row)
             <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#ui-basic12" aria-expanded="false" aria-controls="ui-basic1">
                 <span class="menu-title">TimeTable</span>
-                <i class="icon-people menu-icon"></i>
+                <i class="icon-clock menu-icon"></i>
               </a>
               <div class="collapse" id="ui-basic12">
                 <ul class="nav flex-column sub-menu">
@@ -112,7 +112,7 @@ foreach($results as $row)
             <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#ui-basic5" aria-expanded="false" aria-controls="ui-basic1">
                 <span class="menu-title">Notes</span>
-                <i class="icon-people menu-icon"></i>
+                <i class="icon-book-open menu-icon"></i>
               </a>
               <div class="collapse" id="ui-basic5">
                 <ul class="nav flex-column sub-menu">
@@ -124,7 +124,7 @@ foreach($results as $row)
             <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#ui-basic6" aria-expanded="false" aria-controls="ui-basic1">
                 <span class="menu-title">Assignment</span>
-                <i class="icon-people menu-icon"></i>
+                <i class="icon-docs menu-icon"></i>
               </a>
               <div class="collapse" id="ui-basic6">
                 <ul class="nav flex-column sub-menu">
@@ -184,7 +184,7 @@ foreach($results as $row)
             <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#ui-basic7" aria-expanded="false" aria-controls="ui-basic1">
                 <span class="menu-title">Prev Years</span>
-                <i class="icon-people menu-icon"></i>
+                <i class="icon-reload menu-icon"></i>
               </a>
               <div class="collapse" id="ui-basic7">
                 <ul class="nav flex-column sub-menu">
