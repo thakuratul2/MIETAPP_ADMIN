@@ -98,8 +98,8 @@ echo "<script>window.location.href ='add-subject.php'</script>";
                         <label for="exampleInputEmail3">Semester</label>
                         <select  name="semester" class="form-control" required='true'>
                           <option value="">Choose semester</option>
-                          <option value="odd">Odd Semester</option>
-                          <option value="even">Even Semester</option>
+                          <option value="Odd Semester">Odd Semester</option>
+                          <option value="Even Semester">Even Semester</option>
                           
                           
                         </select>
