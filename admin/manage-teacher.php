@@ -23,7 +23,7 @@ $query->execute();
 <html lang="en">
   <head>
    
-    <title>MIET BR ADMIN |||Manage Students</title>
+    <title>MIET BR ADMIN || Manage Students</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">

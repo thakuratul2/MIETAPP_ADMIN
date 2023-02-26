@@ -68,8 +68,8 @@ foreach($results as $row)
               </a>
               <div class="collapse" id="ui-basic2">
                 <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="add-students.php">Add Students</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="manage-students.php">Manage Students</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="add-subject.php">Add Subjects</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="manage-subject.php">Manage Subjects</a></li>
                 </ul>
               </div>
             </li>

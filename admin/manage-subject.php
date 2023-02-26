@@ -9,12 +9,12 @@ if (strlen($_SESSION['sturecmsaid']==0)) {
 if(isset($_GET['delid']))
 {
 $rid=intval($_GET['delid']);
-$sql="delete from tblclass where ID=:rid";
+$sql="delete from tblsubjects where s_id=:rid";
 $query=$dbh->prepare($sql);
 $query->bindParam(':rid',$rid,PDO::PARAM_STR);
 $query->execute();
- echo "<script>alert('Section deleted');</script>"; 
-  echo "<script>window.location.href = 'manage-class.php'</script>";     
+ echo "<script>alert('Subject deleted');</script>"; 
+  echo "<script>window.location.href = 'manage-subject.php'</script>";     
 
 
 }
@@ -23,7 +23,7 @@ $query->execute();
 <html lang="en">
   <head>
    
-    <title>MIET BR ADMIN || Manage Section</title>
+    <title>MIET BR ADMIN || Manage Subject</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
@@ -53,11 +53,11 @@ $query->execute();
         <div class="main-panel">
           <div class="content-wrapper">
              <div class="page-header">
-              <h3 class="page-title"> Manage Section </h3>
+              <h3 class="page-title"> Manage Subjects </h3>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-                  <li class="breadcrumb-item active" aria-current="page"> Manage Section</li>
+                  <li class="breadcrumb-item active" aria-current="page"> Manage Subjects</li>
                 </ol>
               </nav>
             </div>
@@ -66,15 +66,15 @@ $query->execute();
                 <div class="card">
                   <div class="card-body">
                     <div class="d-sm-flex align-items-center mb-4">
-                      <h4 class="card-title mb-sm-0">Manage Section</h4>
-                      <a href="#" class="text-dark ml-auto mb-3 mb-sm-0"> View all Section</a>
+                      <h4 class="card-title mb-sm-0">Manage Subjects</h4>
+                      <a href="#" class="text-dark ml-auto mb-3 mb-sm-0"> View all Subjects</a>
                     </div>
                     <div class="table-responsive border rounded p-1">
                       <table class="table">
                         <thead>
                           <tr>
                             <th class="font-weight-bold">S.No</th>
-                            <th class="font-weight-bold">Section Name</th>
+                            <th class="font-weight-bold">Subject Name</th>
                             <th class="font-weight-bold">Year</th>
                             <th class="font-weight-bold">Semester</th>
                             <th class="font-weight-bold">Group Name</th>
@@ -92,13 +92,13 @@ $query->execute();
         // Formula for pagination
         $no_of_records_per_page =15;
         $offset = ($pageno-1) * $no_of_records_per_page;
-       $ret = "SELECT ID FROM tblclass";
+       $ret = "SELECT ID FROM tblsubjects";
 $query1 = $dbh -> prepare($ret);
 $query1->execute();
 $results1=$query1->fetchAll(PDO::FETCH_OBJ);
 $total_rows=$query1->rowCount();
 $total_pages = ceil($total_rows / $no_of_records_per_page);
-$sql="SELECT * from tblclass LIMIT $offset, $no_of_records_per_page";
+$sql="SELECT * from tblsubjects LIMIT $offset, $no_of_records_per_page";
 $query = $dbh -> prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
@@ -111,13 +111,13 @@ foreach($results as $row)
                           <tr>
                            
                             <td><?php echo htmlentities($cnt);?></td>
-                            <td><?php  echo htmlentities($row->SectionName);?></td>
-                            <td><?php  echo htmlentities($row->year);?></td>
-                            <td><?php  echo htmlentities($row->semester);?></td>
-                            <td><?php  echo htmlentities($row->groupName);?></td>
+                            <td><?php  echo htmlentities($row->SubjectName);?></td>
+                            <td><?php  echo htmlentities($row->Year);?></td>
+                            <td><?php  echo htmlentities($row->Semester);?></td>
+                            <td><?php  echo htmlentities($row->GroupName);?></td>
                             <td>
-                              <div><a href="edit-class-detail.php?editid=<?php echo htmlentities ($row->ID);?>"><i class="icon-eye"></i></a>
-                                                || <a href="manage-class.php?delid=<?php echo ($row->ID);?>" onclick="return confirm('Do you really want to Delete ?');"> <i class="icon-trash"></i></a></div>
+                              <div><a href="edit-subject-detail.php?editid=<?php echo htmlentities ($row->s_id);?>"><i class="icon-eye"></i></a>
+                                                || <a href="manage-subject.php?delid=<?php echo ($row->s_id);?>" onclick="return confirm('Do you really want to Delete ?');"> <i class="icon-trash"></i></a></div>
                             </td> 
                           </tr><?php $cnt=$cnt+1;}} ?>
                         </tbody>
