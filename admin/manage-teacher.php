@@ -99,7 +99,7 @@ $query1->execute();
 $results1=$query1->fetchAll(PDO::FETCH_OBJ);
 $total_rows=$query1->rowCount();
 $total_pages = ceil($total_rows / $no_of_records_per_page);
-$sql="SELECT tblstudent.StuID,tblstudent.StudentName,tblstudent.StudentEmail,tblstudent.Gender,tblstudent.ContactNumber,tblstudent.DateofAdded,tblclass.ClassName,tblclass.Section from tblstudent join tblclass on tblclass.ID=tblstudent.StudentClass LIMIT $offset, $no_of_records_per_page";
+$sql="SELECT tblstudent.ID as sid,tblstudent.StudentName,tblstudent.StudentEmail,tblstudent.Gender,tblstudent.ContactNumber,tblstudent.DateofAdded from tblstudent LIMIT $offset, $no_of_records_per_page";
 $query = $dbh -> prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
@@ -112,7 +112,7 @@ foreach($results as $row)
                           <tr>
                            
                             <td><?php  echo htmlentities($cnt);?></td>
-                            <td><?php  echo htmlentities($row->StuID);?></td>
+                            
                             <td><?php  echo htmlentities($row->StudentName);?></td>
                             <td><?php  echo htmlentities($row->StudentEmail);?></td>
                             <td><?php  echo htmlentities($row->Gender);?></td>
