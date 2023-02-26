@@ -119,8 +119,7 @@ foreach($results as $row)
                             <td><?php  echo htmlentities($row->ContactNumber);?></td>
                             <td><?php  echo htmlentities($row->DateofAdded);?></td>
                             <td>
-                              <div><a href="edit-student-detail.php?editid=<?php echo htmlentities ($row->sid);?>"><i class="icon-eye"></i></a>
-                                                || <a href="manage-teacher.php?delid=<?php echo ($row->sid);?>" onclick="return confirm('Do you really want to Delete ?');"> <i class="icon-trash"></i></a></div>
+                              <a href="manage-teacher.php?delid=<?php echo ($row->sid);?>" onclick="return confirm('Do you really want to Delete ?');"> <i class="icon-trash"></i>Delete</a></div>
                             </td> 
                           </tr><?php $cnt=$cnt+1;}} ?>
                         </tbody>
