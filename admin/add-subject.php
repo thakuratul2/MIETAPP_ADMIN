@@ -86,7 +86,7 @@ echo "<script>window.location.href ='add-subject.php'</script>";
                       <div class="form-group">
                         <label for="exampleInputEmail3">Year</label>
                         <select  name="year" class="form-control" required='true'>
-                          <option value="">Choose years</option>
+                          <option value="">Choose year</option>
                           <option value="1 year">1 Year</option>
                           <option value="2 year">2 Year</option>
                           <option value="3 year">3 Year</option>
