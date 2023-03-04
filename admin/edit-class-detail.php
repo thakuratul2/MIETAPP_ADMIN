@@ -22,6 +22,7 @@ $query->bindParam(':groupName',$groupName,PDO::PARAM_STR);
 $query->bindParam(':eid',$eid,PDO::PARAM_STR);
  $query->execute();
   echo '<script>alert("Section has been updated")</script>';
+  echo "<script>window.location.href ='manage-class.php'</script>";
 }
 
   ?>
