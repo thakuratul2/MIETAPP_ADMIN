@@ -99,7 +99,7 @@ $query1->execute();
 $results1=$query1->fetchAll(PDO::FETCH_OBJ);
 $total_rows=$query1->rowCount();
 $total_pages = ceil($total_rows / $no_of_records_per_page);
-$sql="SELECT tblclass.ID,tblclass.SectionName,tblnotice.NoticeMsg,tblnotice.NoticeTitle,tblnotice.CreationDate,tblnotice.ClassId,tblnotice.ID as nid from tblnotice join tblclass on tblclass.ID=tblnotice.ClassId LIMIT $offset, $no_of_records_per_page";
+$sql="SELECT tblnotice.ID,tblclass.SectionName,tblnotice.NoticeMsg,tblnotice.NoticeTitle,tblnotice.CreationDate,tblnotice.SectionId,tblnotice.ID as nid from tblnotice join tblclass on tblclass.ID=tblnotice.SectionId LIMIT $offset, $no_of_records_per_page";
 $query = $dbh -> prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);

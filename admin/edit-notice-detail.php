@@ -8,17 +8,18 @@ if (strlen($_SESSION['sturecmsaid']==0)) {
    if(isset($_POST['submit']))
   {
  $nottitle=$_POST['nottitle'];
- $classid=$_POST['classid'];
+ $sectionid=$_POST['sectionid'];
  $notmsg=$_POST['notmsg'];
  $eid=$_GET['editid'];
-$sql="update tblnotice set NoticeTitle=:nottitle,ClassId=:classid, NoticeMsg=:notmsg where ID=:eid";
+$sql="update tblnotice set NoticeTitle=:nottitle,SectionId=:sectionid, NoticeMsg=:notmsg where ID=:eid";
 $query=$dbh->prepare($sql);
 $query->bindParam(':nottitle',$nottitle,PDO::PARAM_STR);
-$query->bindParam(':classid',$classid,PDO::PARAM_STR);
+$query->bindParam(':sectionid',$sectionid,PDO::PARAM_STR);
 $query->bindParam(':notmsg',$notmsg,PDO::PARAM_STR);
 $query->bindParam(':eid',$eid,PDO::PARAM_STR);
  $query->execute();
   echo '<script>alert("Notice has been updated")</script>';
+  echo "<script>window.location.href = 'manage-notice.php'</script>";
 }
 
   ?>
@@ -26,12 +27,14 @@ $query->bindParam(':eid',$eid,PDO::PARAM_STR);
 <html lang="en">
   <head>
    
-    <title>Student  Management System|| Update Notice</title>
+    <title>MIET BR ADMIN || Update Notice</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
     <!-- endinject -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
     <!-- Plugin css for this page -->
     <link rel="stylesheet" href="vendors/select2/select2.min.css">
     <link rel="stylesheet" href="vendors/select2-bootstrap-theme/select2-bootstrap.min.css">
@@ -72,7 +75,7 @@ $query->bindParam(':eid',$eid,PDO::PARAM_STR);
                     <form class="forms-sample" method="post" enctype="multipart/form-data">
                       <?php
 $eid=$_GET['editid'];
-$sql="SELECT tblclass.ID,tblclass.ClassName,tblclass.Section,tblnotice.NoticeTitle,tblnotice.CreationDate,tblnotice.ClassId,tblnotice.NoticeMsg,tblnotice.ID as nid from tblnotice join tblclass on tblclass.ID=tblnotice.ClassId where tblnotice.ID=:eid";
+$sql="SELECT tblnotice.ID,tblclass.SectionName,tblnotice.NoticeTitle,tblnotice.CreationDate,tblnotice.SectionId,tblnotice.NoticeMsg,tblnotice.ID as nid from tblnotice join tblclass on tblclass.ID=tblnotice.SectionId where tblnotice.ID=:eid";
 $query = $dbh -> prepare($sql);
 $query->bindParam(':eid',$eid,PDO::PARAM_STR);
 $query->execute();
@@ -88,9 +91,9 @@ foreach($results as $row)
                       </div>
                      
                       <div class="form-group">
-                        <label for="exampleInputEmail3">Notice For</label>
-                        <select  name="classid" class="form-control">
-                          <option value="<?php  echo htmlentities($row->ClassId);?>"><?php  echo htmlentities($row->ClassName);?><?php  echo htmlentities($row->Section);?></option>
+                        <label for="exampleInputEmail3">Notice For Section</label>
+                        <select  name="sectionid" class="form-control">
+                          <option value="<?php  echo htmlentities($row->SecionId);?>"><?php  echo htmlentities($row->SectionName);?></option>
                          <?php 
 
 $sql2 = "SELECT * from    tblclass ";
@@ -101,7 +104,7 @@ $result2=$query2->fetchAll(PDO::FETCH_OBJ);
 foreach($result2 as $row1)
 {          
     ?>  
-<option value="<?php echo htmlentities($row1->ID);?>"><?php echo htmlentities($row1->ClassName);?> <?php echo htmlentities($row1->Section);?></option>
+<option value="<?php echo htmlentities($row1->ID);?>"><?php echo htmlentities($row1->SectionName);?></option>
  <?php } ?> 
                         </select>
                       </div>
@@ -110,7 +113,7 @@ foreach($result2 as $row1)
                         <textarea name="notmsg" value="" class="form-control" required='true'><?php  echo htmlentities($row->NoticeMsg);?></textarea>
                       </div>
                    <?php $cnt=$cnt+1;}} ?>
-                      <button type="submit" class="btn btn-primary mr-2" name="submit">Update</button>
+                      <button type="submit" class="btn btn-primary mr-2" name="submit">Update Notice</button>
                      
                     </form>
                   </div>

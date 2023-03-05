@@ -8,12 +8,12 @@ if (strlen($_SESSION['sturecmsaid']==0)) {
    if(isset($_POST['submit']))
   {
  $nottitle=$_POST['nottitle'];
- $classid=$_POST['classid'];
+ $sectionid=$_POST['sectionid'];
  $notmsg=$_POST['notmsg'];
-$sql="insert into tblnotice(NoticeTitle,ClassId,NoticeMsg)values(:nottitle,:classid,:notmsg)";
+$sql="insert into tblnotice(NoticeTitle,SectionId,NoticeMsg)values(:nottitle,:sectionid,:notmsg)";
 $query=$dbh->prepare($sql);
 $query->bindParam(':nottitle',$nottitle,PDO::PARAM_STR);
-$query->bindParam(':classid',$classid,PDO::PARAM_STR);
+$query->bindParam(':sectionid',$sectionid,PDO::PARAM_STR);
 $query->bindParam(':notmsg',$notmsg,PDO::PARAM_STR);
  $query->execute();
    $LastInsertId=$dbh->lastInsertId();
@@ -84,7 +84,7 @@ echo "<script>window.location.href ='add-notice.php'</script>";
                      
                       <div class="form-group">
                         <label for="exampleInputEmail3">Notice For Section</label>
-                        <select  name="classid" class="form-control" required='true'>
+                        <select  name="sectionid" class="form-control" required='true'>
                           <option value="">Select Class</option>
                          <?php 
 
