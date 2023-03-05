@@ -13,7 +13,7 @@ $sql="delete from tblnotice where ID=:rid";
 $query=$dbh->prepare($sql);
 $query->bindParam(':rid',$rid,PDO::PARAM_STR);
 $query->execute();
- echo "<script>alert('Data deleted');</script>"; 
+ echo "<script>alert('Notice deleted');</script>"; 
   echo "<script>window.location.href = 'manage-notice.php'</script>";     
 
 
@@ -23,13 +23,15 @@ $query->execute();
 <html lang="en">
   <head>
    
-    <title>Student  Management System|||Manage Notice</title>
+    <title>MIET BR ADMIN || Manage Notice</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
     <!-- endinject -->
     <!-- Plugin css for this page -->
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./vendors/daterangepicker/daterangepicker.css">
     <link rel="stylesheet" href="./vendors/chartist/chartist.min.css">
     <!-- End plugin css for this page -->
@@ -74,8 +76,8 @@ $query->execute();
                           <tr>
                             <th class="font-weight-bold">S.No</th>
                             <th class="font-weight-bold">Notice Title</th>
-                            <th class="font-weight-bold">Class</th>
-                            
+                            <th class="font-weight-bold">Section</th>
+                            <th class="font-weight-bold">Message</th>
                             <th class="font-weight-bold">Notice Date</th>
                             <th class="font-weight-bold">Action</th>
                             
@@ -97,7 +99,7 @@ $query1->execute();
 $results1=$query1->fetchAll(PDO::FETCH_OBJ);
 $total_rows=$query1->rowCount();
 $total_pages = ceil($total_rows / $no_of_records_per_page);
-$sql="SELECT tblclass.ID,tblclass.SectionName,tblnotice.NoticeTitle,tblnotice.CreationDate,tblnotice.ClassId,tblnotice.ID as nid from tblnotice join tblclass on tblclass.ID=tblnotice.ClassId LIMIT $offset, $no_of_records_per_page";
+$sql="SELECT tblclass.ID,tblclass.SectionName,tblnotice.NoticeMsg,tblnotice.NoticeTitle,tblnotice.CreationDate,tblnotice.ClassId,tblnotice.ID as nid from tblnotice join tblclass on tblclass.ID=tblnotice.ClassId LIMIT $offset, $no_of_records_per_page";
 $query = $dbh -> prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
@@ -112,7 +114,7 @@ foreach($results as $row)
                             <td><?php echo htmlentities($cnt);?></td>
                             <td><?php  echo htmlentities($row->NoticeTitle);?></td>
                             <td><?php  echo htmlentities($row->SectionName);?></td>
-                           
+                            <td><?php  echo htmlentities($row->NoticeMsg);?></td>
                             <td><?php  echo htmlentities($row->CreationDate);?></td>
                             <td>
                               <div><a href="edit-notice-detail.php?editid=<?php echo htmlentities ($row->ID);?>"><i class="icon-eye"></i></a>
