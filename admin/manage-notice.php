@@ -75,7 +75,7 @@ $query->execute();
                             <th class="font-weight-bold">S.No</th>
                             <th class="font-weight-bold">Notice Title</th>
                             <th class="font-weight-bold">Class</th>
-                            <th class="font-weight-bold">Section</th>
+                            
                             <th class="font-weight-bold">Notice Date</th>
                             <th class="font-weight-bold">Action</th>
                             
@@ -97,7 +97,7 @@ $query1->execute();
 $results1=$query1->fetchAll(PDO::FETCH_OBJ);
 $total_rows=$query1->rowCount();
 $total_pages = ceil($total_rows / $no_of_records_per_page);
-$sql="SELECT tblclass.ID,tblclass.ClassName,tblclass.Section,tblnotice.NoticeTitle,tblnotice.CreationDate,tblnotice.ClassId,tblnotice.ID as nid from tblnotice join tblclass on tblclass.ID=tblnotice.ClassId LIMIT $offset, $no_of_records_per_page";
+$sql="SELECT tblclass.ID,tblclass.SectionName,tblnotice.NoticeTitle,tblnotice.CreationDate,tblnotice.ClassId,tblnotice.ID as nid from tblnotice join tblclass on tblclass.ID=tblnotice.ClassId LIMIT $offset, $no_of_records_per_page";
 $query = $dbh -> prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
@@ -111,8 +111,8 @@ foreach($results as $row)
                            
                             <td><?php echo htmlentities($cnt);?></td>
                             <td><?php  echo htmlentities($row->NoticeTitle);?></td>
-                            <td><?php  echo htmlentities($row->ClassName);?></td>
-                            <td><?php  echo htmlentities($row->Section);?></td>
+                            <td><?php  echo htmlentities($row->SectionName);?></td>
+                           
                             <td><?php  echo htmlentities($row->CreationDate);?></td>
                             <td>
                               <div><a href="edit-notice-detail.php?editid=<?php echo htmlentities ($row->ID);?>"><i class="icon-eye"></i></a>

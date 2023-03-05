@@ -3,7 +3,7 @@
           <a class="navbar-brand brand-logo" href="dashboard.php">
             <strong style="color: white;">MIET BR ADMIN</strong>
           </a>
-          <a class="navbar-brand brand-logo-mini" href="dashboard.php"><img src="images/logo-mini.svg" alt="logo" /></a>
+          <a class="navbar-brand brand-logo-mini" href="dashboard.php"><img src="images/favicon.ico" alt="logo" /></a>
         </div><?php
          $aid= $_SESSION['sturecmsaid'];
 $sql="SELECT * from tbladmin where ID=:aid";

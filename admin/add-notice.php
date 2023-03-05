@@ -82,7 +82,7 @@ echo "<script>window.location.href ='add-notice.php'</script>";
                       </div>
                      
                       <div class="form-group">
-                        <label for="exampleInputEmail3">Notice For</label>
+                        <label for="exampleInputEmail3">Notice For Section</label>
                         <select  name="classid" class="form-control" required='true'>
                           <option value="">Select Class</option>
                          <?php 
@@ -95,7 +95,7 @@ $result2=$query2->fetchAll(PDO::FETCH_OBJ);
 foreach($result2 as $row1)
 {          
     ?>  
-<option value="<?php echo htmlentities($row1->ID);?>"><?php echo htmlentities($row1->ClassName);?> <?php echo htmlentities($row1->Section);?></option>
+<option value="<?php echo htmlentities($row1->ID);?>"><?php echo htmlentities($row1->SectionName);?> <?php echo htmlentities($row1->Section);?></option>
  <?php } ?> 
                         </select>
                       </div>
@@ -104,7 +104,7 @@ foreach($result2 as $row1)
                         <textarea name="notmsg" value="" class="form-control" required='true'></textarea>
                       </div>
                    
-                      <button type="submit" class="btn btn-primary mr-2" name="submit">Add</button>
+                      <button type="submit" class="btn btn-primary mr-2" name="submit">Add Notice</button>
                      
                     </form>
                   </div>

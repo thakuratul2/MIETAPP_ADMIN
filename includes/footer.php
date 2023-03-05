@@ -47,7 +47,7 @@ foreach($results as $row)
     <!-- container -->
     <div class="container">
       <div class="copyright-left">
-      <p>© <?php echo date('Y');?> Student Management System </p>
+      <p>© <?php echo date('Y');?> MIET BR ADMIN </p>
       </div>
       <div class="copyright-right">
         <ul>

@@ -106,15 +106,15 @@ $totsubject=$query3->rowCount();
                       <div class="col-md-6 col-xl report-inner-card">
                         <div class="inner-card-text">
                           <?php 
-                        $sql4 ="SELECT * from  tblpublicnotice";
+                        $sql4 ="SELECT * from  tblnotice";
 $query4 = $dbh -> prepare($sql4);
 $query4->execute();
 $results4=$query4->fetchAll(PDO::FETCH_OBJ);
-$totpublicnotice=$query4->rowCount();
+$totnotice=$query4->rowCount();
 ?>
-                          <span class="report-title">Total Public Notice</span>
-                          <h4><?php echo htmlentities($totpublicnotice);?></h4>
-                          <a href="manage-public-notice.php"><span class="report-count"> View PublicNotices</span></a>
+                          <span class="report-title">Total Notice</span>
+                          <h4><?php echo htmlentities($totnotice);?></h4>
+                          <a href="manage-notice.php"><span class="report-count"> View Notices</span></a>
                         </div>
                         <div class="inner-card-icon bg-primary">
                           <i class="icon-doc"></i>
